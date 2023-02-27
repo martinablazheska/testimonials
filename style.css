@@ -1,0 +1,177 @@
+html{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 500;
+}
+
+body {
+    background-color: #edf2f8;
+    display: flex;
+    
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    align-content: space-evenly;
+    border-radius: 0.6rem;
+    margin: 1.5em;
+    padding: 2em;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.graduate {
+    display: flex;
+    margin-bottom: 0.9rem;
+    align-items: center;
+}
+
+.grad-img {
+    border-radius: 50%;
+    width: 1.8rem;
+    height: 1.8rem;
+    margin-right: 1rem;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+}
+
+.grad-name {
+    font-size: 0.9rem;
+    font-weight: 500;
+ 
+}
+
+.grad-ver {
+    font-size: 0.7rem;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+.highlight {
+    font-size: 1.26rem;
+    margin-bottom: 0.8rem;
+}
+
+.full-quote {
+    font-size: 0.8125rem;
+    font-weight: 500;
+    opacity: 0.8;
+    line-height: 1.5rem;
+}
+
+/* .testimonial */
+
+.testimonial:nth-child(1) {
+    background-color: #733fc8;
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: right 1.5em top 0;
+    margin-top: 4rem;
+    color: hsl(0, 0%, 81%);
+}
+
+.testimonial:nth-child(2) {
+    background-color: hsl(217, 19%, 35%);
+    color: hsl(0, 0%, 81%);
+}
+
+.testimonial:nth-child(3)  {
+    background-color: white;
+    color:hsl(219, 29%, 14%);
+}
+
+.testimonial:nth-child(4) {
+    background-color: hsl(219, 29%, 14%);
+    color: hsl(0, 0%, 81%);
+}
+
+.testimonial:nth-child(5) {
+    background-color: white;
+    margin-bottom: 5rem;
+    color: hsl(219, 29%, 14%);
+}
+
+
+/* .highlight */
+
+.d-highlight {
+    color: hsl(217, 19%, 35%);
+    font-weight: 600;
+}
+
+.l-highlight {
+    color: white;
+    font-weight: 500;
+}
+
+/* .grad-img */
+
+.testimonial:nth-child(1) .grad-img {
+    border: 2px solid #a77bda;
+}
+
+.testimonial:nth-child(4) .grad-img {
+    border: 2px solid #a77bda;
+}
+
+
+@media (min-width:900px) {
+
+    .body {
+        display:flex;
+        height: 100vh;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+
+    .container {
+        margin: 10% 15%;
+        display: grid;
+        grid-gap: 3%;
+        grid-template-areas: 
+                "a a a b e"
+                "c d d d e";
+
+        grid-template-columns: auto;
+    }
+
+    .highlight{
+        margin-bottom: 2rem;
+    }
+
+    .full-quote {
+        font-size: 1rem;
+    }
+
+    .testimonial:nth-child(1) {
+         grid-area: a;
+         margin: 0;
+    }
+    
+    .testimonial:nth-child(2){
+        grid-area: b;
+        margin: 0;
+    }
+
+    .testimonial:nth-child(3){
+        grid-area: c;
+        margin: 0;
+    }
+
+    .testimonial:nth-child(4){
+        grid-area: d;
+        margin: 0;
+    }
+
+    .testimonial:nth-child(5){
+        grid-area: e;
+        margin: 0;
+    }
+
+}
+
+
+
