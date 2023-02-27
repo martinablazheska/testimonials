@@ -63,7 +63,7 @@ body {
 
 /* .testimonial */
 
-.testimonial:nth-child(1) {
+.testimonial:nth-of-type(1) {
     background-color: #733fc8;
     background-image: url(images/bg-pattern-quotation.svg);
     background-repeat: no-repeat;
@@ -72,22 +72,22 @@ body {
     color: hsl(0, 0%, 81%);
 }
 
-.testimonial:nth-child(2) {
+.testimonial:nth-of-type(2) {
     background-color: hsl(217, 19%, 35%);
     color: hsl(0, 0%, 81%);
 }
 
-.testimonial:nth-child(3)  {
+.testimonial:nth-of-type(3)  {
     background-color: white;
     color:hsl(219, 29%, 14%);
 }
 
-.testimonial:nth-child(4) {
+.testimonial:nth-of-type(4) {
     background-color: hsl(219, 29%, 14%);
     color: hsl(0, 0%, 81%);
 }
 
-.testimonial:nth-child(5) {
+.testimonial:nth-of-type(5) {
     background-color: white;
     margin-bottom: 5rem;
     color: hsl(219, 29%, 14%);
@@ -108,11 +108,11 @@ body {
 
 /* .grad-img */
 
-.testimonial:nth-child(1) .grad-img {
+.testimonial:nth-of-type(1) .grad-img {
     border: 2px solid #a77bda;
 }
 
-.testimonial:nth-child(4) .grad-img {
+.testimonial:nth-of-type(4) .grad-img {
     border: 2px solid #a77bda;
 }
 
@@ -130,12 +130,10 @@ body {
     .container {
         margin: 10% 15%;
         display: grid;
-        grid-gap: 3%;
+        gap: 3%;
         grid-template-areas: 
                 "a a a b e"
                 "c d d d e";
-
-        grid-template-columns: auto;
     }
 
     .highlight{
@@ -146,27 +144,27 @@ body {
         font-size: 1rem;
     }
 
-    .testimonial:nth-child(1) {
+    .testimonial:nth-of-type(1) {
          grid-area: a;
          margin: 0;
     }
     
-    .testimonial:nth-child(2){
+    .testimonial:nth-of-type(2){
         grid-area: b;
         margin: 0;
     }
 
-    .testimonial:nth-child(3){
+    .testimonial:nth-of-type(3){
         grid-area: c;
         margin: 0;
     }
 
-    .testimonial:nth-child(4){
+    .testimonial:nth-of-type(4){
         grid-area: d;
         margin: 0;
     }
 
-    .testimonial:nth-child(5){
+    .testimonial:nth-of-type(5){
         grid-area: e;
         margin: 0;
     }
